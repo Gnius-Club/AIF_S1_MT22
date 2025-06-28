@@ -1,24 +1,273 @@
-<!-- 
-HTML Template for Missions, delete and replace with mission HTML
--->
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Gnius Club</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playbook Sesión 22: El Desafío del Rediseño Consciente (Implementación)</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
-  <h1>
-    Playbook HTML Placeholder Template
-  </h1>
-  <p>
-    Replace with actual playbook code.
-  </p>
-  <script src="script.js"></script>
-</body>
 
+    <header>
+        <h1><span class="book-icon">📋</span> <strong>Playbook Sesión 22: Implementación</strong></h1>
+        <div class="header-widgets">
+            <div class="timer-container">
+                <span id="timer">⏱️ 00:00</span>
+                <button id="startStop">Start</button>
+                <button id="reset">Reset</button>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle-input">
+                    <span class="slider round"></span>
+                </label>
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="activity-list">
+            <h2>Actividades</h2>
+            <ul>
+                <li><a href="#activity-0">📝</a></li>
+                <li><a href="#activity-1">1</a></li>
+                <li><a href="#activity-2">2</a></li>
+                <li><a href="#activity-3">3</a></li>
+                <li><a href="#activity-4">4</a></li>
+                <li><a href="#activity-5">5</a></li>
+            </ul>
+
+            <div class="sidebar-info">
+                <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
+                <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
+            </div>
+        </aside>
+
+        <main class="content">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+
+            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
+
+            <!-- SECCIÓN "DE UN VISTAZO" (ANTES ACTIVITY-0) -->
+            <div class="activity-card" id="activity-0">
+                <h2><span class="book-icon">📝</span> De un Vistazo: Sesión Gnius</h2>
+                <p class="overview-subtitle">Resumen rápido de objetivos, materiales y preparación para el facilitador.</p>
+                <div class="overview-table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">Objetivos, Tácticas y Entregable</th>
+                                <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong>Objetivos:</strong>
+                                    <ul>
+                                        <li>Que los estudiantes ejecuten su plan de proyecto detallado de forma autónoma.</li>
+                                        <li>Que implementen las modificaciones de su rediseño consciente en Onshape.</li>
+                                        <li>Que logren un modelo 3D final y optimizado que refleje su meta de rediseño.</li>
+                                        <li>Que sinteticen su aprendizaje a través de un debate final sobre el rol del humano en la era de la IA.</li>
+                                    </ul>
+                                    <strong>Secuencia de Clase:</strong>
+                                    <ul>
+                                        <li><strong class="tactic-highlight">⚡Saludo Interactivo con IA:</strong> Activación y contextualización de la misión.</li>
+                                        <li><strong class="tactic-highlight">⚡"I Can Statement" + Desafío:</strong> Clarificación de objetivos y presentación del reto del día.</li>
+                                        <li><strong class="tactic-highlight">⚡AI GYM:</strong> Diálogo estratégico con Xolo para la conceptualización.</li>
+                                        <li><strong class="tactic-highlight">⚡Brain Spark:</strong> Ejecución técnica y práctica aumentada por la Dupla Dinámica.</li>
+                                        <li><strong class="tactic-highlight">⚡Gnius STORM:</strong> Showcase de prototipos, síntesis y reflexión.</li>
+                                    </ul>
+                                    <strong>Entregable Clave:</strong>
+                                    <ul>
+                                        <li>El modelo 3D final del objeto rediseñado, reflejando fielmente la meta SMART y el plan de proyecto.</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <strong>Materiales Específicos:</strong>
+                                    <ul>
+                                        <li>Proyector o pantalla interactiva.</li>
+                                        <li>Conexión a internet estable.</li>
+                                        <li>Cuentas de Onshape para cada alumno.</li>
+                                        <li>Chat "Agente Gnius" (Xolo) activo y funcionando.</li>
+                                        <li>Los documentos de "Plan de Rediseño Detallado" de cada estudiante.</li>
+                                        <li>Presentación de diapositivas (Diapositivas 1-10).</li>
+                                    </ul>
+                                    <strong>Preparación Previa para ESTA Sesión:</strong>
+                                    <ol>
+                                        <li><strong>Revisión de Misión (Interna):</strong>
+                                            <ul>
+                                                <li>Asegurarse de que Onshape y Xolo están listos para la sesión final.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Familiarización:</strong> Prepararse para actuar como un observador pasivo y facilitador de la resolución autónoma de problemas.</li>
+                                        <li><strong>Preparación del Debate Final:</strong> Tener bien clara la pregunta final de Xolo sobre el rol humano para poder guiar una discusión significativa y de cierre.</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- FIN DE LA SECCIÓN "DE UN VISTAZO" -->
+
+            <div class="activity-card" id="activity-1">
+                <h2>⚡ Actividad 1: Saludo de IA y Contexto ⏰ 3 minutos</h2>
+                <p>Introducir la sesión como el día de producción y ejecución, donde el plan se convierte en acción.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Bienvenida y Contexto de la Misión ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 2) El facilitador presenta la sesión como el día de la ejecución.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Saludos, productores. El tiempo de la planificación ha terminado. La estrategia está definida. Las tareas están desglosadas. Hoy, es día de producción. Día de ejecución. Su único objetivo es seguir su plan, tarea por tarea, y materializar la visión de su rediseño. La conversación será mínima. La acción lo será todo. Confíen en su plan, confíen en sus habilidades.</p>
+                            </div>
+                        </div>
+                    </div>
+                      <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Activación de la IA ⏰ 2 minutos</h3>
+                            <p>El facilitador guía a los alumnos para que inicien su sesión de trabajo con Xolo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Inicien su sesión final con Xolo: 'Hola Xolo, listo para la Misión 22', seguido de su nombre, perfil y gustos. Esperen su confirmación.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-2">
+                <h2>⚡ Actividad 2: "I Can Statement" y Presentación del Desafío ⏰ 5 minutos</h2>
+                <p>Presentar el desafío de la implementación autónoma y la autogestión como habilidad clave.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: La Fase de Implementación y la Autonomía ⏰ 3 minutos</h3>
+                            <p>(Proyectar Diapositiva 3) El facilitador enmarca la sesión como una simulación de un día de trabajo profesional, enfatizando la autonomía.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Hoy es la sesión que une todo el curso. Tienen un plan que ustedes mismos crearon. Su misión es simple y directa: ejecútenlo. Abran Onshape y su plan, y comiencen a trabajar. El rol de Xolo y el mío hoy será de observación. No hay nuevas instrucciones. El desafío es que ustedes, como equipo, sigan su plan. Si se encuentran con un problema técnico, ya conocen el protocolo. La autogestión es la habilidad clave.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Declaración del "I Can Statement" ⏰ 2 minutos</h3>
+                            <p>(Proyectar Diapositiva 4) El facilitador presenta el objetivo de aprendizaje final del curso.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">El objetivo final es la culminación de todo su aprendizaje. Al final de la sesión, podrán decir: <strong>'Mi equipo ha ejecutado exitosamente un plan de proyecto complejo, implementando todas las modificaciones de nuestro rediseño para obtener un modelo 3D final y optimizado.'</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-3">
+                <h2>⚡ Actividad 3: A.I. GYM (Soporte Pasivo y Foco en la Ejecución) ⏰ 2 minutos</h2>
+                <p>Fase de diálogo muy breve donde Xolo establece su rol pasivo y pone la responsabilidad en los estudiantes.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Xolo en Modo Soporte ⏰ 2 minutos</h3>
+                            <p>(Proyectar Diapositiva 5) El facilitador transmite el mensaje de Xolo, que fomenta el enfoque y la autonomía.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Una última nota de Xolo antes de empezar: "Mi rol hoy es pasivo. Estoy aquí si necesitan una aclaración sobre su plan, pero no guiaré el proceso. El plan es su creación. La ejecución es su responsabilidad. El Onshape AI Advisor está disponible para cualquier consulta técnica. El éxito de hoy depende de su concentración y su capacidad para seguir el camino que ustedes mismos trazaron."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-4">
+                 <h2>⚡ Actividad 4: Brain Spark (Implementación del Plan de Rediseño) ⏰ 30 minutos</h2>
+                <p>Fase de trabajo de producción enfocado, donde los estudiantes siguen su plan de forma metódica y resuelven problemas de forma autónoma.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Ejecución Secuencial y Resolución Autónoma ⏰ 30 minutos</h3>
+                            <p>(Proyectar Diapositiva 6) Los estudiantes siguen su plan tarea por tarea, aplican la metodología de consulta para problemas y marcan su progreso.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Ahora, al Brain Spark. Abran dos ventanas: su "Plan de Rediseño Detallado" y su archivo de Onshape. Lean la primera subtarea, ejecútenla y márquenla como hecha. Continúen con la siguiente. Este es un ciclo de producción metódico. Si surge un problema técnico, apliquen la metodología de consulta: formulen la pregunta precisa al Onshape AI Advisor. Su objetivo es completar todas las tareas de su plan y obtener el modelo 3D final. Tienen 30 minutos. Comiencen.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-5">
+                <h2>⚡ Actividad 5: Gnius STORM (Cierre de Sesión) ⏰ 5 minutos</h2>
+                <p>Fase final de "Showcase del Rediseño Final" y el debate de cierre sobre el rol del diseñador humano en la era de la IA.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Think (Reflexión Individual) ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 7) El facilitador guía una reflexión sobre el proceso de ejecución del plan.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">
+                                     Tiempo. Observen su modelo final. Prepárense para explicar no solo el qué, sino el cómo. Reflexionen: <strong>¿Se ajustaron a las estimaciones de tiempo de su plan? ¿Surgió algún problema inesperado que no estaba en el plan y cómo lo resolvieron?</strong>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Pair (Showcase del Rediseño Final) ⏰ 2 minutos</h3>
+                            <p>(Proyectar Diapositiva 8) Los estudiantes comparten su resultado final y su proceso de ejecución.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">
+                                    En parejas, muestren el modelo 3D final. Expliquen brevemente su proceso de ejecución. ¿Se mantuvieron fieles al plan? ¿Cómo resolvieron los problemas técnicos que surgieron?
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Share (Debate Final y Cierre del Curso) ⏰ 2 minutos</h3>
+                            <p>(Proyectar Diapositiva 9) El facilitador plantea la pregunta de cierre de Xolo, culminando el curso con una reflexión sobre el rol humano.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">
+                                    Observen sus creaciones. Son el resultado de un proceso completo de pensamiento, planificación y ejecución. Ahora, la pregunta final y más importante de Xolo: Si una IA generó el concepto, optimizó la estructura, vigiló la impresión y planificó su trabajo, <strong>¿cuál es el rol y el valor irremplazable que ustedes, como diseñadores humanos, aportaron a este proceso?</strong> Este debate es el cierre de nuestro viaje.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 </html>
